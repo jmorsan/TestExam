@@ -10,14 +10,8 @@
     <string name="test8">Es A?</string>
     <string name="test9">Es A?</string>
     <string name="test10">Es A?</string>
-    <string name="test11">Es A?</string>
-    <string name="test12">Es A?</string>
-    <string name="test13">Es A?</string>
-    <string name="test14">Es A?</string>
-    <string name="test15">Es A?</string>
-    <string name="test16">Es A?</string>
-    <string name="test17">Es A?</string>
-    <string name="test18">Es A?</string>
-    <string name="test19">Es A?</string>
-    <string name="test20">Es A?</string>
+    <string name="verdadero">Verdadero</string>
+    <string name="falso">Falso</string>
+    <string name="resultado">RESULTADO</string>
+    <string name="nota">NOTA</string>
 </resources>
