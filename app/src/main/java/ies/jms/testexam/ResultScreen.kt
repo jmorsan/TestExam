@@ -3,6 +3,7 @@ package ies.jms.testexam
 import android.graphics.Color.green
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
@@ -18,6 +19,7 @@ class ResultScreen : AppCompatActivity() {
         if(nota)
         {
             layout.setBackgroundColor(ContextCompat.getColor(this,R.color.colorAprobado))
+            textResult.setTextColor(ContextCompat.getColor(this,R.color.black))
 
         }
         else
@@ -28,8 +30,16 @@ class ResultScreen : AppCompatActivity() {
 
         textResult.text = puntos
 
+        val btBack : Button = findViewById(R.id.boton_cerrar_sesion)
+        btBack.setOnClickListener {
+            onBackPressed()
 
-
+        }
 
     }
+
+
+
+
+
 }

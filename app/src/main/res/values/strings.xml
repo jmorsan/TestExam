@@ -14,4 +14,5 @@
     <string name="falso">Falso</string>
     <string name="resultado">RESULTADO</string>
     <string name="nota">NOTA</string>
+    <string name="cerrar_sesion">CERRAR SESION</string>
 </resources>
