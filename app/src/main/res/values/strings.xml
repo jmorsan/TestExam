@@ -1,15 +1,16 @@
 <resources>
     <string name="app_name">TestExam</string>
     <string name="test1">Es A?</string>
-    <string name="test2">Es A?</string>
-    <string name="test3">Es A?</string>
-    <string name="test4">Es A?</string>
-    <string name="test5">Es A?</string>
-    <string name="test6">Es A?</string>
-    <string name="test7">Es A?</string>
-    <string name="test8">Es A?</string>
-    <string name="test9">Es A?</string>
-    <string name="test10">Es A?</string>
+    <string name="test2">Es B?</string>
+    <string name="test3">Es C?</string>
+    <string name="test4">Es D?</string>
+    <string name="test5">Es E?</string>
+    <string name="test6">Es F?</string>
+    <string name="test7">Es G?</string>
+    <string name="test8">Es H?</string>
+    <string name="test9">Es I?</string>
+    <string name="test10">Es J?</string>
+    <string name="test11">Es K?</string>
     <string name="verdadero">Verdadero</string>
     <string name="falso">Falso</string>
     <string name="resultado">RESULTADO</string>

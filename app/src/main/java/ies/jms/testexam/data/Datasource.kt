@@ -15,9 +15,9 @@ class Datasource {
             Pregunta(R.string.test6, true),
             Pregunta(R.string.test7, true),
             Pregunta(R.string.test8, true),
-            Pregunta(R.string.test9, true),
-            Pregunta(R.string.test10, true)
-
+            Pregunta(R.string.test9,false),
+            Pregunta(R.string.test10,true),
+            Pregunta(R.string.test11,true),
         )
     }
 }

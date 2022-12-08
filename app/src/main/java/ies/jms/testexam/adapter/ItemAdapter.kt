@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.recyclerview.widget.RecyclerView
-import ies.jms.testexam.MainActivity.Companion.puntos
+import ies.jms.testexam.MainActivity.Companion.preguntas
 import ies.jms.testexam.R
 import ies.jms.testexam.model.Pregunta
 
@@ -32,32 +32,12 @@ class ItemAdapter(val context : Context, val dataset:List<Pregunta>):RecyclerVie
         val pregunta = dataset[position]
         holder.textView.text = context.resources.getString(pregunta.pregunta)
         holder.radioButtonTrue.setOnClickListener {
-            if(pregunta.respuesta){
-                puntos+=1
-                Toast.makeText(context,"Puntos Actuales: "+ puntos,Toast.LENGTH_SHORT).show()
-
-            }
-            else
-            {
-                puntos-=1
-                Toast.makeText(context,"Puntos Actuales: "+ puntos,Toast.LENGTH_SHORT).show()
-            }
+            preguntas.put(pregunta,true)
         }
 
         holder.radioButtonFalse.setOnClickListener {
-            if(!pregunta.respuesta){
-                puntos+=1
-                Toast.makeText(context,"Puntos Actuales: "+ puntos,Toast.LENGTH_SHORT).show()
-            }
-            else
-            {
-                puntos-=1
-                Toast.makeText(context,"Puntos Actuales: "+ puntos,Toast.LENGTH_SHORT).show()
-            }
-
+            preguntas.put(pregunta,false)
         }
-
-
     }
 
     override fun getItemCount(): Int {
