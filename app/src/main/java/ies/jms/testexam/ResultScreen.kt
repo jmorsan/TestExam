@@ -7,7 +7,10 @@ import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.RecyclerView
 import ies.jms.testexam.MainActivity.Companion.preguntas
+import ies.jms.testexam.adapter.ItemAdapter
+import ies.jms.testexam.data.Datasource
 
 class ResultScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,10 +46,11 @@ class ResultScreen : AppCompatActivity() {
 
         val btBack : Button = findViewById(R.id.boton_cerrar_sesion)
         btBack.setOnClickListener {
-            onBackPressed()
             preguntas.clear()
-
-
+            val myDataset = Datasource().loadPreguntas().shuffled().take(5)
+            val recyclerView : RecyclerView =findViewById<RecyclerView>(R.id.lista_preguntas)
+            recyclerView.adapter = ItemAdapter(this,myDataset)
+            onBackPressed()
         }
 
     }
